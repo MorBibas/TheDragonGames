@@ -1,0 +1,387 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
+html {
+    background: linear-gradient(#FCCEB9, #EFBA9E);
+    height: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Assistant', sans-serif;
+    /* height: auto; */
+    margin: 0;
+    position: relative;
+}
+
+#container {
+    height: auto;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 85vh;
+    width: 85vw;
+    top: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background: #F5F5F5;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.23);
+}
+
+
+/*לוגו*/
+#logo {
+    width: 17%;
+    padding: 5px 15px;
+    direction: rtl;
+    margin-right: 10px;
+}
+
+nav {
+    margin-left: 10px;
+    direction: rtl;
+    float: left;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            nav ul li a {
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 3px 10px;
+                font-weight: 300;
+                font-size: 14pt;
+                font-family: 'Assistant', sans-serif;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a::before {
+                    display: block;
+                    content: attr(title);
+                    font-weight: bold;
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-family: 'Assistant', sans-serif;
+                    direction: rtl;
+                    text-decoration: none;
+                }
+
+/*חלונית אודות*/
+
+#aboutDiv {
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+#about {
+    /*  רקע */
+    background-image: url('../Images/PopupBG.png');
+    background-size: 110%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    /*  טקסט */
+    text-align: center;
+    width: 780px;
+    height: 450px;
+    border-radius: 25px;
+    font-size: 16pt;
+    margin-top: 110px;
+    margin-right: 250px;
+    direction: rtl;
+    border: 3px solid #FFFFFF;
+    position: relative;
+}
+
+#GameNameAbout {
+    width: 35%;
+    margin-bottom: -30px;
+}
+
+.subTitle {
+    margin-top: -10px;
+    font-size: 18pt;
+}
+
+#aboutDiv a {
+    display: block;
+}
+
+.popUp {
+    background-color: white;
+    width: 400px;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: center;
+    width: 700px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+    border: 1px solid black;
+}
+
+.closeAbout {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    right: 725px;
+    bottom: -13px;
+    cursor: pointer;
+}
+
+.bigO {
+    font-family: Assistant;
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+    margin-top: 35px;
+}
+
+.litleO {
+    font-family: Assistant;
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+    margin-top: -0px;
+}
+
+.AboutHITlogo {
+    width: 15%;
+}
+
+/*לינק המכון*/
+.AboutHITlink {
+    font-family: Assistant;
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+}
+
+    /*לינק המכון במעבר עכבר*/
+    .AboutHITlink:hover {
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+/*חלונית איך משחקים*/
+#howToPlayDiv {
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+#howToPlay {
+    /*  רקע */
+    background-image: url('../Images/HowToP-01.png');
+    background-size: 150%;
+    background-position-x: -255px;
+    background-position-y: -87px;
+    background-repeat: no-repeat;
+    /*    טקסט*/
+    position: fixed;
+    text-align: center;
+    width: 780px;
+    height: 450px;
+    border-radius: 25px;
+    font-size: 16pt;
+    margin-top: 110px;
+    margin-right: 250px;
+    direction: rtl;
+    border: 3px solid #FFFFFF;
+}
+
+#howToPlayDiv a {
+    display: block;
+}
+.closeHowToPlay {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    right: 725px;
+    bottom: -13px;
+    cursor: pointer;
+}
+
+/*כותרת איך משחקים*/
+.HeadlineHowtoplay {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 16pt;
+    color: black;
+    margin-top: 8px;
+    margin-right: -45px;
+}
+
+.big1 {
+    font-family: Assistant;
+/*    font-weight: 600;*/
+    font-size: 12pt;
+    text-align: center;
+    color: black;
+    margin-top: 45px;
+}
+
+.litle1 {
+    margin-top: 0px;
+    font-family: Assistant;
+    font-size: 11pt;
+    text-align: center;
+    color: black;
+}
+
+.speed {
+    margin-right: 12px;
+}
+
+.sound {
+    margin-right: 55px;
+}
+
+.pause {
+    margin-right: 40px;
+}
+
+.big {
+    margin-right: 45px;
+}
+
+.big2 {
+    margin-left: -365px;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}

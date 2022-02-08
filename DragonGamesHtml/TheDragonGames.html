@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>משחקי הדרקון</title>
+    <meta name="description" content="משחקי הדרקון" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Mor Bibas, Doron Gatenio & Keren Harel" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+    <link rel="icon" href="Images/Dragonlogo.png" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="Images/DragonLogoAndName.png" /> <!--הלוגו של המשחק שלכם-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about" title="אודות">אודות</a></li>
+                    <li><a class="howToPlay" title="איך משחקים?">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <div id="about">
+                <img id="closeAbout" class="closeAbout" src="Images/XfromWindow.png" />
+                <!--כותרת-->
+                <img id="GameNameAbout" class="GameNameAbout" src="Images/DragonGamesTextLogo.png" />
+
+                <p class="bigO">
+                    <b>אפיון ופיתוח:</b>
+                    מור ביבס, דורון גטניו וקרן הראל
+                </p>
+                <p class="litleO">
+                    <b>אופיין ופותח במסגרת פרויקט בקורסים:</b><br />
+                    סביבות לימוד אינטראקטיביות 1 ותכנות אינטראקטיבי 1<br />
+                    <b>תשפ"ב</b>
+                </p>
+
+                <img src="Images/HITlogo.png" href="https://www.hit.ac.il/telem/overview" target="_blank" class="AboutHITlogo" /> <br />
+                <a id="LinkFaculta" class="AboutHITlink" href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <div id="howToPlay">
+                <img id="closeHowToPlay" class="closeHowToPlay" src="Images/XfromWindow.png" />
+
+                <!--כותרת-->
+                <p class="HeadlineHowtoplay">איך משחקים?</p>
+
+                <p class="big1">
+                    הפשירו את הסירות שעליהן מופיעות התשובות הנכונות בעזרת לחיצת עכבר<br />
+                    והמנעו מהסירות עם התשובות השגויות
+                </p>
+
+                <p class="litle1">
+                    <span class="speed">מד מהירות</span> <span class="sound">שליטה בסאונד</span><span class="pause">השהיית משחק</span><span class="big">הגדלת תמונה<br /></span> <span class="big2">במעבר עכבר</span>
+                </p>
+            </div>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="https://morbibas.github.io/TheDragonGames/DragonGames.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+
+        </div>
+    </div>
+</body>
+
+</html>
